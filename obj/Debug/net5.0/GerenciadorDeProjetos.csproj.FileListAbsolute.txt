@@ -27,3 +27,8 @@ C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvol
 C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\obj\Debug\net5.0\ref\GerenciadorDeProjetos.dll
 C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.pdb
 C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Pichau\Desktop\Sistemas de Informação\2 ano\Segundo Semestre\Desenvolvimento de Software Visual\Projeto Cadastro de Projetos\GerenciadorDeProjetos\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
