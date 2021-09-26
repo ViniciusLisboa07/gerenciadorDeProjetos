@@ -1,3 +1,4 @@
+using System.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace GerenciadorDeProjetos.Controllers
         // Construtor
         public ProjetosController(DataContext context) => _context = context;
 
-        // POST : api/produto
+        // POST : /api​/Projetos
         [HttpPost]
         public Projeto Create(Projeto projeto)
         {
@@ -28,8 +29,17 @@ namespace GerenciadorDeProjetos.Controllers
             return projeto;
         }
 
-
+        // GET : /api​/Projetos
         [HttpGet]
         public List<Projeto> Listar() => _context.Projetos.ToList();
+
+        // GET : /api​/Projetos
+        [HttpGet]
+        [Route("getbyid/{id}")]
+        public Projeto GetById([FromRoute]int id)
+        {
+            return null;
+        }
+    
     }
 }
