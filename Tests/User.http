@@ -7,3 +7,23 @@ Content-Type: application/json
     "Office" : "DB1",
     "Company" : "Tenda"
 }
+
+### Listar user
+GET https://localhost:5001/api/user/list
+
+### Buscar user pelo id
+GET https://localhost:5001/api/user/getbyid/1
+
+### Alterar user
+PUT https://localhost:5001/api/user/update
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "Name" : "Maria",
+    "Office" : "DB1",
+    "Company" : "Tenda"
+}
+
+### Deletar user
+DELETE https://localhost:5001/api/user/delete/Bolacha

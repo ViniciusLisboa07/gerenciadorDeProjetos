@@ -5889,11 +5889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\GerenciadorDeProjetos.csproj",
+      "projectUniqueName": "C:\\Faculdade\\DesenvolvimentoSoftware\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
       "projectName": "GerenciadorDeProjetos",
-      "projectPath": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\GerenciadorDeProjetos.csproj",
+      "projectPath": "C:\\Faculdade\\DesenvolvimentoSoftware\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
       "packagesPath": "C:\\Users\\Admilson Xavier\\.nuget\\packages\\",
-      "outputPath": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\obj\\",
+      "outputPath": "C:\\Faculdade\\DesenvolvimentoSoftware\\gerenciadorDeProjetos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admilson Xavier\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5951,7 +5951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

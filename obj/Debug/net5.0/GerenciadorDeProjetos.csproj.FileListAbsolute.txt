@@ -116,3 +116,72 @@ C:\Faculdade\gerenciadorDeProjetos-maria\obj\Debug\net5.0\scopedcss\bundle\Geren
 C:\Faculdade\gerenciadorDeProjetos-maria\obj\Debug\net5.0\GerenciadorDeProjetos.RazorTargetAssemblyInfo.cache
 C:\Faculdade\gerenciadorDeProjetos-maria\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.CopyComplete
 C:\Faculdade\gerenciadorDeProjetos-maria\obj\Debug\net5.0\GerenciadorDeProjetos.genruntimeconfig.cache
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.AssemblyReference.cache
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.AssemblyInfoInputs.cache
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.AssemblyInfo.cs
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.CoreCompileInputs.cache
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.MvcApplicationPartsAssemblyInfo.cs
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.MvcApplicationPartsAssemblyInfo.cache
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.dll
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\ref\GerenciadorDeProjetos.dll
+C:\Faculdade\Desenvolvimento de Software\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.AssemblyReference.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.AssemblyInfoInputs.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.AssemblyInfo.cs
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.CoreCompileInputs.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.MvcApplicationPartsAssemblyInfo.cs
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.MvcApplicationPartsAssemblyInfo.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\ref\GerenciadorDeProjetos.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\appsettings.Development.json
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\appsettings.json
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.exe
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.deps.json
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.runtimeconfig.json
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.runtimeconfig.dev.json
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\ref\GerenciadorDeProjetos.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\GerenciadorDeProjetos.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\staticwebassets\GerenciadorDeProjetos.StaticWebAssets.Manifest.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\staticwebassets\GerenciadorDeProjetos.StaticWebAssets.xml
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\scopedcss\bundle\GerenciadorDeProjetos.styles.css
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.RazorTargetAssemblyInfo.cache
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.csproj.CopyComplete
+C:\Faculdade\DesenvolvimentoSoftware\gerenciadorDeProjetos\obj\Debug\net5.0\GerenciadorDeProjetos.genruntimeconfig.cache

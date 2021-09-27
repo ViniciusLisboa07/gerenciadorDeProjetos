@@ -7,3 +7,23 @@ Content-Type: application/json
     "User" : "Maria",
     "Company" : "Tenda"
 }
+
+### Listar project
+GET https://localhost:5001/api/project/list
+
+### Buscar project pelo id
+GET https://localhost:5001/api/project/getbyid/1
+
+### Alterar project
+PUT https://localhost:5001/api/project/update
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "Name" : "Project 1",
+    "User" : "Maria",
+    "Company" : "Tenda"
+}
+
+### Deletar project
+DELETE https://localhost:5001/api/project/delete/Bolacha

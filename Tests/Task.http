@@ -1,0 +1,33 @@
+### Cadastrar task
+POST https://localhost:5001/api/task/create
+Content-Type: application/json
+
+{
+    "Name" : "Task1",
+    "User" : "Maria",
+    "Project" : "DB1",
+    "StartDate" : "2021-09-30",
+    "EndDate" : "2021-10-30"
+}
+
+### Listar tasks
+GET https://localhost:5001/api/task/list
+
+### Buscar tasks pelo id
+GET https://localhost:5001/api/task/getbyid/1
+
+### Alterar tasks
+PUT https://localhost:5001/api/task/update
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "Name" : "Task2",
+    "User" : "Maria",
+    "Project" : "DB1",
+    "StartDate" : "2022-09-30",
+    "EndDate" : "2022-10-30"
+}
+
+### Deletar tasks
+DELETE https://localhost:5001/api/task/delete/Bolacha
