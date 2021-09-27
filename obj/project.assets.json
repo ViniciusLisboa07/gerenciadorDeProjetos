@@ -5889,11 +5889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Faculdade\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
+      "projectUniqueName": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\GerenciadorDeProjetos.csproj",
       "projectName": "GerenciadorDeProjetos",
-      "projectPath": "C:\\Faculdade\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
+      "projectPath": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\GerenciadorDeProjetos.csproj",
       "packagesPath": "C:\\Users\\Admilson Xavier\\.nuget\\packages\\",
-      "outputPath": "C:\\Faculdade\\gerenciadorDeProjetos\\obj\\",
+      "outputPath": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admilson Xavier\\AppData\\Roaming\\NuGet\\NuGet.Config"

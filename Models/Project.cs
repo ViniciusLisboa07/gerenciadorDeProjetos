@@ -6,7 +6,7 @@ namespace Models
     public class Project
     {
         //Construtor
-        public Project() => CriadoEm = DateTime.Now;
+        public Project() => Created = DateTime.Now;
 
         //Atributos ou propriedades
         public int Id { get; set; }
@@ -17,6 +17,6 @@ namespace Models
 
         //ToString
         public override string ToString() =>
-            $"Name: {Name} | User: {User} | Company: {Company} |Criado em: {CriadoEm}";
+            $"Name: {Name} | User: {User} | Company: {Company} |Created em: {Created}";
     }
 }

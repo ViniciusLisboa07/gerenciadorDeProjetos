@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LXEeuCq6Dawz96QUP+hqVSlY4d96X5+2eMQNW2PSsVmv5yexXsoIu+/6h/zv5OunpS7TIo/KnFgQBCvzzf5m+Q==",
+  "dgSpecHash": "f1QyC4/NtEodvVPVcVsetnxDfR2rX1vPCR3OFJrUpGCy/f2Ytj/T9OU9ba3qquzvTr6A4Wd9H5mIwZOYwdH7Mw==",
   "success": true,
-  "projectFilePath": "C:\\Faculdade\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
+  "projectFilePath": "C:\\Faculdade\\gerenciadorDeProjetos-maria\\GerenciadorDeProjetos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admilson Xavier\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Admilson Xavier\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
