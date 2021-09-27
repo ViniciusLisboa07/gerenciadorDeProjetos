@@ -1,0 +1,9 @@
+### Cadastrar user
+POST https://localhost:5001/api/user/create
+Content-Type: application/json
+
+{
+    "Name" : "Maria",
+    "Office" : "DB1",
+    "Company" : "Tenda"
+}

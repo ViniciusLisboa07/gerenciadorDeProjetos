@@ -1,0 +1,9 @@
+### Cadastrar project
+POST https://localhost:5001/api/project/create
+Content-Type: application/json
+
+{
+    "Name" : "Project 1",
+    "User" : "Maria",
+    "Company" : "Tenda"
+}
