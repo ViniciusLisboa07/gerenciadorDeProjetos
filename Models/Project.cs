@@ -6,7 +6,11 @@ namespace Models
     public class Project
     {
         //Construtor
-        public Project() => Created = DateTime.Now;
+        public Project(DateTime startDate,DateTime endDate ) {
+            Created = DateTime.Now; 
+            StartDate = startDate;
+            EndDate = endDate;
+        }
 
         //Atributos ou propriedades
         public int Id { get; set; }
