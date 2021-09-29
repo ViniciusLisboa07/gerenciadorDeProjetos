@@ -14,6 +14,8 @@ namespace Models
         public string User { get; set; }
         public string Company { get; set; }
         public DateTime Created { get; set; }
+        public DateTime EndDate { get; set; }
+        public DateTime Created { get; set; }
 
         //ToString
         public override string ToString() =>
