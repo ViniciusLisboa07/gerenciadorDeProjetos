@@ -5,7 +5,9 @@ Content-Type: application/json
 {
     "Name" : "Project 1",
     "User" : "Maria",
-    "Company" : "Tenda"
+    "Company" : "Tenda",
+    "StartDate" : "2021-09-30",
+    "EndDate" : "2021-10-30"
 }
 
 ### Listar project
