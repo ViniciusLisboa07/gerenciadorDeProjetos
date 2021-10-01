@@ -30,4 +30,4 @@ Content-Type: application/json
 }
 
 ### Deletar tasks
-DELETE https://localhost:5001/api/task/delete/Bolacha
+DELETE https://localhost:5001/api/task/delete/1

@@ -34,7 +34,9 @@ namespace GerenciadorDeProjetos
                 options =>
                 {
                     options.AddPolicy("CorsPolicy", builder => builder
-                        .AllowAnyOrigin());
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
                 }
             );
 
@@ -59,6 +61,8 @@ namespace GerenciadorDeProjetos
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GerenciadorDeProjetos v1"));
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 
