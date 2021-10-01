@@ -47,14 +47,14 @@ namespace Controllers
 
         //DELETE: api/produto/delete/
         [HttpDelete]
-        [Route("delete/{name}")]
-        public IActionResult Delete([FromRoute] string name)
+        [Route("delete/{id}")]
+        public IActionResult Delete([FromRoute] int id)
         {
             //Expressão lambda
             //Buscar um produto pelo nome
             Task task = _context.Task.FirstOrDefault
             (
-                task => task.Name == name
+                task => task.Id == id
             );
             if (task == null)
             {

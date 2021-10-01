@@ -3,9 +3,12 @@ POST https://localhost:5001/api/project/create
 Content-Type: application/json
 
 {
-    "Name" : "Project 1",
-    "User" : "Maria",
-    "Company" : "Tenda"
+        "Name" : "Teste",
+        "User" :  "Raphael",
+        "Company" : "TESTE",
+        "Created" : "2021-09-30",
+        "StartDate" : "2021-09-30",
+        "EndDate" : "2021-09-30"
 }
 
 ### Listar project
@@ -22,11 +25,13 @@ PUT https://localhost:5001/api/project/update
 Content-Type: application/json
 
 {
-    "id" : 1,
-    "Name" : "Project 1",
-    "User" : "Maria",
-    "Company" : "Tenda"
+    "Name" : "Teste",
+    "User" :  "Raphael",
+    "Company" : "TESTE",
+    "Created" : "2021-09-30",
+    "StartDate" : "2021-09-30",
+    "EndDate" : "2021-09-30"
 }
 
 ### Deletar project
-DELETE https://localhost:5001/api/project/delete/Bolacha
+DELETE https://localhost:5001/api/project/delete/5
