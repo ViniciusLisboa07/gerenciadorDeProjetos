@@ -45,6 +45,23 @@ namespace Controllers
             return Ok(project);
         }
 
+        //GET: api/produto/getbyuser/Maria
+        [HttpGet]
+        [Route("getbyuser/{name}")]
+        public IActionResult GetByUser([FromRoute] string name)
+        {
+            //Buscar um produto pela chave primária
+            Project project = _context.Project.FirstOrDefault
+            (
+                project => project.Name == name
+            );
+            if (project == null)
+            {
+                return NotFound();
+            }
+            return Ok(project);
+        }
+
         //DELETE: api/produto/delete/
         [HttpDelete]
         [Route("delete/{id}")]

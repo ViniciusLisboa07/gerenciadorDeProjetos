@@ -15,7 +15,10 @@ Content-Type: application/json
 GET https://localhost:5001/api/project/list
 
 ### Buscar project pelo id
-GET https://localhost:5001/api/project/getbyid/5
+GET https://localhost:5001/api/project/getbyid/6
+
+### Buscar project pelo id
+GET https://localhost:5001/api/project/getbyuser/string
 
 ### Alterar project
 PUT https://localhost:5001/api/project/update
