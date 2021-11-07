@@ -22,9 +22,7 @@ namespace Controllers
         [Route("create")]
         public IActionResult Create([FromBody] Task task)
         {
-            int userId = task.UserId;
             int projectId = task.ProjectId;
-            task.User = _context.User.Find(userId);
             task.Project = _context.Project.Find(projectId);
             _context.Task.Add(task);
             _context.SaveChanges();
@@ -36,7 +34,6 @@ namespace Controllers
         [Route("list")]
         public IActionResult List() => 
                 Ok(_context.Task
-                .Include(task => task.User)
                 .Include(task => task.Project)
                 .ToList());
 

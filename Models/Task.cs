@@ -15,16 +15,15 @@ namespace Models
         //Atributos ou propriedades
         public int Id { get; set; }
         public string Name { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
         public Project Project { get; set; }
         public int ProjectId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public DateTime Created { get; set; }
 
+
         //ToString
         public override string ToString() =>
-            $"Name: {Name} | User: {User} | Project: {Project} | StartDate em: {StartDate} | EndDate em: {EndDate} | Created em: {Created}";
+            $"Name: {Name}  | Project: {Project} | StartDate em: {StartDate} | EndDate em: {EndDate} | Created em: {Created}";
     }
 }
