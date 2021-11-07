@@ -4,6 +4,7 @@ using System.Linq;
 using Data;
 using Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Controllers
 {
@@ -21,6 +22,8 @@ namespace Controllers
         [Route("create")]
         public IActionResult Create([FromBody] Project project)
         {
+            int userId = project.UserId;
+            project.User = _context.User.Find(userId);
             _context.Project.Add(project);
             _context.SaveChanges();
             return Created("", project);
@@ -29,7 +32,10 @@ namespace Controllers
         //GET: api/produto/list
         [HttpGet]
         [Route("list")]
-        public IActionResult List() => Ok(_context.Project.ToList());
+        public IActionResult List() => 
+            Ok(_context.Project
+            .Include(project => project.User)
+            .ToList());
 
         //GET: api/produto/getbyid/1
         [HttpGet]

@@ -65,7 +65,7 @@ namespace Controllers
             return Ok(_context.User.ToList());
         }
 
-        //PUT: api/produto/create
+        //PUT: api/produto/update
         [HttpPut]
         [Route("update")]
         public IActionResult Update([FromBody] User user)
