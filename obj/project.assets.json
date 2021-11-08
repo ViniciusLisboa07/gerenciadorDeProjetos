@@ -5943,26 +5943,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pichau\\.nuget\\packages\\": {}
+    "C:\\Users\\rapha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\Documents\\GitHub\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
+      "projectUniqueName": "D:\\ProjetoC#\\ATUAL\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
       "projectName": "GerenciadorDeProjetos",
-      "projectPath": "C:\\Users\\Pichau\\Documents\\GitHub\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
-      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\Documents\\GitHub\\gerenciadorDeProjetos\\obj\\",
+      "projectPath": "D:\\ProjetoC#\\ATUAL\\gerenciadorDeProjetos\\GerenciadorDeProjetos.csproj",
+      "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
+      "outputPath": "D:\\ProjetoC#\\ATUAL\\gerenciadorDeProjetos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\rapha\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6018,7 +6016,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
