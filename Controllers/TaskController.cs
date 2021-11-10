@@ -39,17 +39,27 @@ namespace Controllers
 
         //GET: api/produto/getbyid/1
         [HttpGet]
-        [Route("getbyid/{id}")]
-        public IActionResult GetById([FromRoute] int id)
+        [Route("getbyid/{projectId}")]
+        public IActionResult GetById([FromRoute] int projectId)
         {
             //Buscar um produto pela chave primária
-            Task task = _context.Task.Find(id);
-            if (task == null)
+            var tasks = _context.Task.ToList();
+            tasks.Where(task => task.ProjectId == projectId);
+            if (tasks == null)
             {
                 return NotFound();
             }
-            return Ok(task);
+            return Ok(tasks);
         }
+
+        //GET: api/task/listbyproductid/1
+        [HttpGet]
+        [Route("listbyproductid/{id}")]
+        public IActionResult ListByProductId() => 
+                Ok(_context.Task
+                .Include(task => task.Project)
+                .ToList());
+
 
         //DELETE: api/produto/delete/
         [HttpDelete]
