@@ -20,10 +20,11 @@ namespace Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public DateTime Created { get; set; }
+        public Boolean End { get; set; }
 
 
         //ToString
         public override string ToString() =>
-            $"Name: {Name}  | Project: {Project} | StartDate em: {StartDate} | EndDate em: {EndDate} | Created em: {Created}";
+            $"Name: {Name}  | Project: {Project} | StartDate em: {StartDate} | EndDate em: {EndDate} | Created em: {Created} | END : {End}";
     }
 }
