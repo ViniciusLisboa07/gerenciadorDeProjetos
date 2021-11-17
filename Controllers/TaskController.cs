@@ -24,6 +24,10 @@ namespace Controllers
         {
             int projectId = task.ProjectId;
             task.Project = _context.Project.Find(projectId);
+            if(task.StartDate < task.Project.StartDate || task.EndDate > task.Project.EndDate){
+                return NotFound("A data de inicio e final devem estar dentro do periodo do projeto");
+            }
+            
             _context.Task.Add(task);
             _context.SaveChanges();
             return Created("", task);
