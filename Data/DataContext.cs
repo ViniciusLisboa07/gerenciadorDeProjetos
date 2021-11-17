@@ -12,5 +12,6 @@ namespace Data
         public DbSet<User> User { get; set; }
         public DbSet<Project> Project { get; set; }
         public DbSet<Task> Task { get; set; }
+        public DbSet<Subtask> Subtask { get; set; }
     }
 }
