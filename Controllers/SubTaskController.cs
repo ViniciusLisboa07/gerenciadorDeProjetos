@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Controllers
 {
     [Controller]
-    [Route("api/subsubtask")]
+    [Route("api/subtask")]
     public class SubtaskController : ControllerBase
     {
         private readonly DataContext _context;
@@ -54,12 +54,12 @@ namespace Controllers
 
         //GET: api/subtask/listbyproductid/1
         [HttpGet]
-        [Route("listbyproductid/{id}")]
-        public IActionResult ListByProductId() => 
-                Ok(_context.Subtask
-                .Include(subtask => subtask.Task)
-                .ToList());
-
+        [Route("listbytaskid/{id}")]
+        public IActionResult ListByProductId([FromRoute] int id)
+            {
+            return Ok(_context.Subtask.Include(subtask => subtask.Task)
+                .Where(subtast => subtast.TaskId == id).ToList());
+            }
 
         //DELETE: api/produto/delete/
         [HttpDelete]

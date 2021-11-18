@@ -3,16 +3,19 @@ POST https://localhost:5001/api/subtask/create
 Content-Type: application/json
 
 {
-    "Description" : "Task1",
-    "TaskId" : 1,
-    "End":false
+    "Description" : "Subask1",
+    "TaskId" : 2,
+    "End":true
 }
 
 ### Listar subtasks
 GET https://localhost:5001/api/subtask/list
 
 ### Buscar subtasks pelo id
-GET https://localhost:5001/api/subtask/getbyid/1
+GET https://localhost:5001/api/subtask/getbyid/3
+
+### Buscar subtasks pelo id
+GET https://localhost:5001/api/subtask/listbytaskid/6
 
 ### Alterar subtasks
 PUT https://localhost:5001/api/subtask/update

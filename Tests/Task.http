@@ -15,6 +15,9 @@ GET https://localhost:5001/api/task/list
 ### Buscar tasks pelo id
 GET https://localhost:5001/api/task/getbyid/1
 
+### Buscar tasks pelo id do projeto
+GET https://localhost:5001/api/task/getbyidproject/7
+
 ### Alterar tasks
 PUT https://localhost:5001/api/task/update
 Content-Type: application/json

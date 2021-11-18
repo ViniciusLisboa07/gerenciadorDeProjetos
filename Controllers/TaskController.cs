@@ -16,6 +16,7 @@ namespace Controllers
 
         //Construtor
         public TaskController(DataContext context) => _context = context;
+        
 
         //POST: api/produto/create
         [HttpPost]
@@ -43,28 +44,35 @@ namespace Controllers
 
         //GET: api/produto/getbyid/1
         [HttpGet]
-        [Route("getbyid/{projectId}")]
-        public IActionResult GetById([FromRoute] int projectId)
+        [Route("getbyid/{id}")]
+        public IActionResult GetById([FromRoute] int id)
         {
             //Buscar um produto pela chave primária
-            var tasks = _context.Task.ToList();
-            tasks.Where(task => task.ProjectId == projectId);
-            if (tasks == null)
+            Task task = _context.Task.Find(id);
+            
+            if (task == null)
             {
                 return NotFound();
             }
-            return Ok(tasks);
+            return Ok(task);
         }
 
+        [HttpGet]
+        [Route("getbyidproject/{id}")]
+        public IActionResult GetByCartId([FromRoute] int id)
+        {
+            return Ok(_context.Task.Include(task => task.Project)
+                .Where(task => task.ProjectId == id).ToList());
+        }
         //GET: api/task/listbyproductid/1
         [HttpGet]
-        [Route("listbyproductid/{id}")]
-        public IActionResult ListByProductId() => 
+        [Route("listbyprojectid/{id}")]
+        public IActionResult ListByProjectId() => 
                 Ok(_context.Task
                 .Include(task => task.Project)
                 .ToList());
-
-
+        
+        
         //DELETE: api/produto/delete/
         [HttpDelete]
         [Route("delete/{id}")]

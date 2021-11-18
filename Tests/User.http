@@ -12,7 +12,7 @@ Content-Type: application/json
 GET https://localhost:5001/api/user/list
 
 ### Buscar user pelo id
-GET https://localhost:5001/api/user/getbyid/6
+GET https://localhost:5001/api/user/getbyid/1
 
 ### Alterar user
 PUT https://localhost:5001/api/user/update
