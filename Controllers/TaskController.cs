@@ -17,7 +17,7 @@ namespace Controllers
         //Construtor
         public TaskController(DataContext context) => _context = context;
 
-        //POST: api/produto/create
+        //POST: api/task/create
         [HttpPost]
         [Route("create")]
         public IActionResult Create([FromBody] Task task)
@@ -33,7 +33,7 @@ namespace Controllers
             return Created("", task);
         }
 
-        //GET: api/produto/list
+        //GET: api/task/list
         [HttpGet]
         [Route("list")]
         public IActionResult List() => 
@@ -41,37 +41,38 @@ namespace Controllers
                 .Include(task => task.Project)
                 .ToList());
 
-        //GET: api/produto/getbyid/1
+        //GET: api/task/listbyproductid/1
         [HttpGet]
-        [Route("getbyid/{projectId}")]
-        public IActionResult GetById([FromRoute] int projectId)
+        [Route("listbyprojectid/{projectId}")]
+        public IActionResult ListByProjectId([FromRoute] int projectId)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um project pela chave primária
             var tasks = _context.Task.ToList();
-            tasks.Where(task => task.ProjectId == projectId);
-            if (tasks == null)
+            var tasksByID = tasks.Where(task => task.ProjectId == projectId);
+            
+            if (tasksByID == null)
             {
                 return NotFound();
             }
-            return Ok(tasks);
+            return Ok(tasksByID);
         }
 
-        //GET: api/task/listbyproductid/1
+        //GET: api/task/getbyid/1
         [HttpGet]
-        [Route("listbyproductid/{id}")]
-        public IActionResult ListByProductId() => 
+        [Route("getbyid/{id}")]
+        public IActionResult GetById() => 
                 Ok(_context.Task
                 .Include(task => task.Project)
                 .ToList());
 
 
-        //DELETE: api/produto/delete/
+        //DELETE: api/task/delete/
         [HttpDelete]
         [Route("delete/{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
             //Expressão lambda
-            //Buscar um produto pelo nome
+            //Buscar um project pelo nome
             Task task = _context.Task.FirstOrDefault
             (
                 task => task.Id == id
@@ -85,7 +86,7 @@ namespace Controllers
             return Ok(_context.Task.ToList());
         }
 
-        //PUT: api/produto/create
+        //PUT: api/task/create
         [HttpPut]
         [Route("update")]
         public IActionResult Update([FromBody] Task task)
