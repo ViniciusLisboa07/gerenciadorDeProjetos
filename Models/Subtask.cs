@@ -13,8 +13,8 @@ namespace Models
         //Atributos ou propriedades
         public int Id { get; set; }
         public string Description { get; set; }
-        public Task Task { get; set; }
         public int TaskId { get; set; }
+        public Task Task { get; set; }
         public DateTime Created { get; set; }
         public Boolean End { get; set; }
 

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Controllers
 {
     [Controller]
-    [Route("api/subsubtask")]
+    [Route("api/subtask")]
     public class SubtaskController : ControllerBase
     {
         private readonly DataContext _context;
