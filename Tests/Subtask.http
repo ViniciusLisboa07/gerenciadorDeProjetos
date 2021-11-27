@@ -1,18 +1,21 @@
 ### Cadastrar subtask
-POST https://localhost:5001/api/subtask/create
+POST http://localhost:5001/api/subtask/create
 Content-Type: application/json
 
 {
     "Description" : "Task1",
-    "TaskId" : 1,
+    "TaskId" : 6,
     "End":false
 }
 
 ### Listar subtasks
-GET https://localhost:5001/api/subtask/list
+GET http://localhost:5001/api/subtask/list
 
 ### Buscar subtasks pelo id
-GET https://localhost:5001/api/subtask/getbyid/1
+GET http://localhost:5001/api/subtask/getbyid/9
+
+### Buscar subtasks pelo id
+GET http://localhost:5001/api/subtask/listbytaskid/6
 
 ### Alterar subtasks
 PUT https://localhost:5001/api/subtask/update

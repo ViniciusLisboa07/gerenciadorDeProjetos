@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Controllers
 {
     [Controller]
-    [Route("api/subsubtask")]
+    [Route("api/subtask")]
     public class SubtaskController : ControllerBase
     {
         private readonly DataContext _context;
@@ -39,27 +39,37 @@ namespace Controllers
 
         //GET: api/produto/getbyid/1
         [HttpGet]
-        [Route("getbyid/{taskId}")]
-        public IActionResult GetById([FromRoute] int taskId)
+        [Route("getbyid/{id}")]
+        public IActionResult GetById([FromRoute] int id)
         {
             //Buscar um produto pela chave primária
-            var subtasks = _context.Subtask.ToList();
-            subtasks.Where(subtask => subtask.TaskId == taskId);
-            if (subtasks == null)
+            Subtask subtask = _context.Subtask
+            .Include(subtask => subtask.Task)
+            .FirstOrDefault(x=> x.Id == id);
+            if (subtask == null)
             {
                 return NotFound();
             }
-            return Ok(subtasks);
+            return Ok(subtask);
         }
 
-        //GET: api/subtask/listbyproductid/1
-        [HttpGet]
-        [Route("listbyproductid/{id}")]
-        public IActionResult ListByProductId() => 
-                Ok(_context.Subtask
-                .Include(subtask => subtask.Task)
-                .ToList());
 
+        [HttpGet]
+        [Route("listbytaskid/{taskId}")]
+        public IActionResult GetByTaskId([FromRoute] int taskId)
+        {
+            //Buscar um produto pela chave primária
+            List<Subtask> subtask = _context.Subtask
+            .Include(subtask => subtask.Task)
+            .Where(x => x.TaskId == taskId)
+            .ToList();
+
+            if (subtask == null)
+            {
+                return NotFound();
+            }
+            return Ok(subtask);
+        }
 
         //DELETE: api/produto/delete/
         [HttpDelete]
