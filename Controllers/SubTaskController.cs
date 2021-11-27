@@ -54,7 +54,7 @@ namespace Controllers
 
         //GET: api/subtask/listbyproductid/1
         [HttpGet]
-        [Route("listbyproductid/{id}")]
+        [Route("listbytaskid/{id}")]
         public IActionResult ListByProductId() => 
                 Ok(_context.Subtask
                 .Include(subtask => subtask.Task)
@@ -86,6 +86,8 @@ namespace Controllers
         [Route("update")]
         public IActionResult Update([FromBody] Subtask subtask)
         {
+            int taskId = subtask.TaskId;
+            subtask.Task = _context.Task.Find(taskId);
             _context.Subtask.Update(subtask);
             _context.SaveChanges();
             return Ok(subtask);
