@@ -60,11 +60,16 @@ namespace Controllers
         //GET: api/task/getbyid/1
         [HttpGet]
         [Route("getbyid/{id}")]
-        public IActionResult GetById() => 
-                Ok(_context.Task
-                .Include(task => task.Project)
-                .ToList());
-
+        public IActionResult GetById([FromRoute] int id)
+        {
+            //Buscar um produto pela chave primária
+            Task task = _context.Task.Find(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+            return Ok(task);
+        }
 
         //DELETE: api/task/delete/
         [HttpDelete]
