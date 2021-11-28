@@ -99,5 +99,23 @@ namespace Controllers
         }
 
 
+        [HttpGet]
+        [Route("calc-percentage/{id}")]
+        public IActionResult CalcPorcent([FromRoute] int id)
+        {
+            //Buscar um produto pela chave primária
+            var tasksByProject = _context.Task.ToList().Where(task => task.ProjectId == id);
+            var finishedTasks = tasksByProject.Where(task => task.End == true);
+
+            var percentage = (100 * finishedTasks.Count()) / tasksByProject.Count();
+
+            // Project project = _context.Project.Find(id);
+            if (percentage == null)
+            {
+                return NotFound();
+            }
+            return Ok(percentage);
+        }
+
     }
 }
