@@ -23,7 +23,11 @@ namespace Controllers
         public IActionResult Create([FromBody] Subtask subtask)
         {
             int taskId = subtask.TaskId;
+            int projectId = subtask.Task.ProjectId;
+            int userId = subtask.Task.Project.UserId;
             subtask.Task = _context.Task.Find(taskId);
+            subtask.Task.Project = _context.Project.Find(projectId);
+            subtask.Task.Project.User = _context.User.Find(userId);
             _context.Subtask.Add(subtask);
             _context.SaveChanges();
             return Created("", subtask);
@@ -35,6 +39,8 @@ namespace Controllers
         public IActionResult List() => 
                 Ok(_context.Subtask
                 .Include(subtask => subtask.Task)
+                .Include(subtask => subtask.Task.Project)
+                .Include(subtask => subtask.Task.Project.User)
                 .ToList());
 
         //GET: api/produto/getbyid/1

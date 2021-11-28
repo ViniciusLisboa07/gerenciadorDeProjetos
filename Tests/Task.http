@@ -1,5 +1,5 @@
 ### Cadastrar task
-POST https://localhost:5001/api/task/create
+POST http//localhost:5001/api/task/create
 Content-Type: application/json
 
 {
@@ -10,13 +10,13 @@ Content-Type: application/json
 }
 
 ### Listar tasks
-GET https://localhost:5001/api/task/list
+GET http//localhost:5001/api/task/list
 
 ### Buscar tasks pelo id
-GET https://localhost:5001/api/task/getbyid/1
+GET http//localhost:5001/api/task/getbyid/1
 
 ### Alterar tasks
-PUT https://localhost:5001/api/task/update
+PUT http//localhost:5001/api/task/update
 Content-Type: application/json
 
 {
@@ -29,4 +29,4 @@ Content-Type: application/json
 }
 
 ### Deletar tasks
-DELETE https://localhost:5001/api/task/delete/1
+DELETE http//localhost:5001/api/task/delete/1
