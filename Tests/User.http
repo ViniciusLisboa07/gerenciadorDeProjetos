@@ -1,5 +1,5 @@
 ### Cadastrar user
-POST https://localhost:5001/api/user/create
+POST http://localhost:5001/api/user/create
 Content-Type: application/json
 
 {
@@ -9,13 +9,13 @@ Content-Type: application/json
 }
 
 ### Listar user
-GET https://localhost:5001/api/user/list
+GET http://localhost:5001/api/user/list
 
 ### Buscar user pelo id
-GET https://localhost:5001/api/user/getbyid/6
+GET http://localhost:5001/api/user/getbyid/6
 
 ### Alterar user
-PUT https://localhost:5001/api/user/update
+PUT http://localhost:5001/api/user/update
 Content-Type: application/json
 
 {
@@ -26,4 +26,4 @@ Content-Type: application/json
 }
 
 ### Deletar user
-DELETE https://localhost:5001/api/user/delete/7
+DELETE http://localhost:5001/api/user/delete/7

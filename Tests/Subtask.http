@@ -1,5 +1,5 @@
 ### Cadastrar subtask
-POST https://localhost:5001/api/subtask/create
+POST http://localhost:5001/api/subtask/create
 Content-Type: application/json
 
 {
@@ -9,13 +9,13 @@ Content-Type: application/json
 }
 
 ### Listar subtasks
-GET https://localhost:5001/api/subtask/list
+GET http://localhost:5001/api/subtask/list
 
 ### Buscar subtasks pelo id
-GET https://localhost:5001/api/subtask/getbyid/1
+GET http://localhost:5001/api/subtask/getbyid/1
 
 ### Alterar subtasks
-PUT https://localhost:5001/api/subtask/update
+PUT http://localhost:5001/api/subtask/update
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### Deletar subtasks
-DELETE https://localhost:5001/api/subtask/delete/1
+DELETE http://localhost:5001/api/subtask/delete/1
