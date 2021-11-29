@@ -128,8 +128,8 @@ namespace Controllers
 
             // Project project = _context.Project.Find(id);
             if (LateTasks != null && LateTasks.EndDate > project.EndDate)
-            {
-                return Ok(LateTasks);
+            {   
+                return Ok(true);
             } else {
                 return Ok(false);
             }
