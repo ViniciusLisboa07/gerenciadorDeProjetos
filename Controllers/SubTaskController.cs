@@ -17,7 +17,7 @@ namespace Controllers
         //Construtor
         public SubtaskController(DataContext context) => _context = context;
 
-        //POST: api/produto/create
+        //POST: api/subtask/create
         [HttpPost]
         [Route("create")]
         public IActionResult Create([FromBody] Subtask subtask)
@@ -29,7 +29,7 @@ namespace Controllers
             return Created("", subtask);
         }
 
-        //GET: api/produto/list
+        //GET: api/subtask/list
         [HttpGet]
         [Route("list")]
         public IActionResult List() => 
@@ -39,12 +39,12 @@ namespace Controllers
                 .Include(subtask => subtask.Task.Project.User)
                 .ToList());
 
-        //GET: api/produto/getbyid/1
+        //GET: api/subtask/getbyid/1
         [HttpGet]
         [Route("getbyid/{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um subtask pela chave primária
             Subtask subtask = _context.Subtask
             .Include(subtask => subtask.Task)
             .FirstOrDefault(x=> x.Id == id);
@@ -60,7 +60,7 @@ namespace Controllers
         [Route("listbytaskid/{taskId}")]
         public IActionResult GetByTaskId([FromRoute] int taskId)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um subtask pela chave primária
             List<Subtask> subtask = _context.Subtask
             .Include(subtask => subtask.Task)
             .Where(x => x.TaskId == taskId)
@@ -74,13 +74,13 @@ namespace Controllers
         }
 
 
-        //DELETE: api/produto/delete/
+        //DELETE: api/subtask/delete/
         [HttpDelete]
         [Route("delete/{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
             //Expressão lambda
-            //Buscar um produto pelo nome
+            //Buscar um subtask pelo nome
             Subtask subtask = _context.Subtask.FirstOrDefault
             (
                 subtask => subtask.Id == id
@@ -94,7 +94,7 @@ namespace Controllers
             return Ok(_context.Subtask.ToList());
         }
 
-        //PUT: api/produto/create
+        //PUT: api/subtask/create
         [HttpPut]
         [Route("update")]
         public IActionResult Update([FromBody] Subtask subtask)

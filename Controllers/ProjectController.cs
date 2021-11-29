@@ -17,7 +17,7 @@ namespace Controllers
         //Construtor
         public ProjectController(DataContext context) => _context = context;
 
-        //POST: api/produto/create
+        //POST: api/project/create
         [HttpPost]
         [Route("create")]
         public IActionResult Create([FromBody] Project project)
@@ -29,7 +29,7 @@ namespace Controllers
             return Created("", project);
         }
 
-        //GET: api/produto/list
+        //GET: api/project/list
         [HttpGet]
         [Route("list")]
         public IActionResult List() => 
@@ -37,12 +37,12 @@ namespace Controllers
             .Include(project => project.User)
             .ToList());
 
-        //GET: api/produto/getbyid/1
+        //GET: api/project/getbyid/1
         [HttpGet]
         [Route("getbyid/{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um project pela chave primária
             Project project = _context.Project.Find(id);
             if (project == null)
             {
@@ -51,12 +51,12 @@ namespace Controllers
             return Ok(project);
         }
 
-        //GET: api/produto/getbyuser/Maria
+        //GET: api/project/getbyuser/Maria
         [HttpGet]
         [Route("getbyuser/{name}")]
         public IActionResult GetByUser([FromRoute] string name)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um project pela chave primária
             Project project = _context.Project.FirstOrDefault
             (
                 project => project.Name == name
@@ -68,13 +68,13 @@ namespace Controllers
             return Ok(project);
         }
 
-        //DELETE: api/produto/delete/
+        //DELETE: api/project/delete/
         [HttpDelete]
         [Route("delete/{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
             //Expressão lambda
-            //Buscar um produto pelo nome
+            //Buscar um project pelo nome
             Project project = _context.Project.FirstOrDefault
             (
                 project => project.Id == id
@@ -88,7 +88,7 @@ namespace Controllers
             return Ok(_context.Project.ToList());
         }
 
-        //PUT: api/produto/create
+        //PUT: api/project/create
         [HttpPut]
         [Route("update")]
         public IActionResult Update([FromBody] Project project)
@@ -103,7 +103,7 @@ namespace Controllers
         [Route("calc-percentage/{id}")]
         public IActionResult CalcPorcent([FromRoute] int id)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um project pela chave primária
             var tasksByProject = _context.Task.ToList().Where(task => task.ProjectId == id);
             var finishedTasks = tasksByProject.Where(task => task.End == true);
 
@@ -121,7 +121,7 @@ namespace Controllers
         [Route("is-late/{id}")]
         public IActionResult IsLate([FromRoute] int id)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um project pela chave primária
             var project = _context.Project.Find(id);
             var tasksByProject = _context.Task.ToList().Where(task => task.ProjectId == id);
             var LateTasks = tasksByProject.Where(task => task.EndDate > project.EndDate).FirstOrDefault();

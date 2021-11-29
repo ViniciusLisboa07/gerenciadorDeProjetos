@@ -23,9 +23,7 @@ namespace Controllers
         public IActionResult Create([FromBody] Task task)
         {
             int projectId = task.ProjectId;
-            int userid = task.Project.UserId;
             task.Project = _context.Project.Find(projectId);
-            task.Project.User = _context.User.Find(userid);
             if(task.StartDate < task.Project.StartDate || task.EndDate > task.Project.EndDate){
                 return NotFound("A data de inicio e final devem estar dentro do periodo do projeto");
             }

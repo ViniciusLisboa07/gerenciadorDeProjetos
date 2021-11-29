@@ -16,7 +16,7 @@ namespace Controllers
         //Construtor
         public UserController(DataContext context) => _context = context;
 
-        //POST: api/produto/create
+        //POST: api/user/create
         [HttpPost]
         [Route("create")]
         public IActionResult Create([FromBody] User user)
@@ -26,17 +26,17 @@ namespace Controllers
             return Created("", user);
         }
 
-        //GET: api/produto/list
+        //GET: api/user/list
         [HttpGet]
         [Route("list")]
         public IActionResult List() => Ok(_context.User.ToList());
 
-        //GET: api/produto/getbyid/1
+        //GET: api/user/getbyid/1
         [HttpGet]
         [Route("getbyid/{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
-            //Buscar um produto pela chave primária
+            //Buscar um user pela chave primária
             User user = _context.User.Find(id);
             if (user == null)
             {
@@ -45,13 +45,13 @@ namespace Controllers
             return Ok(user);
         }
 
-        //DELETE: api/produto/delete/
+        //DELETE: api/user/delete/
         [HttpDelete]
         [Route("delete/{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
             //Expressão lambda
-            //Buscar um produto pelo nome
+            //Buscar um user pelo nome
             User user = _context.User.FirstOrDefault
             (
                 user => user.Id == id
@@ -65,7 +65,7 @@ namespace Controllers
             return Ok(_context.User.ToList());
         }
 
-        //PUT: api/produto/update
+        //PUT: api/user/update
         [HttpPut]
         [Route("update")]
         public IActionResult Update([FromBody] User user)
