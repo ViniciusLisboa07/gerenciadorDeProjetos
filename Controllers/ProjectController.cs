@@ -117,5 +117,23 @@ namespace Controllers
             return Ok(percentage);
         }
 
+        [HttpGet]
+        [Route("is-late/{id}")]
+        public IActionResult IsLate([FromRoute] int id)
+        {
+            //Buscar um produto pela chave primária
+            var project = _context.Project.Find(id);
+            var tasksByProject = _context.Task.ToList().Where(task => task.ProjectId == id);
+            var LateTasks = tasksByProject.Where(task => task.EndDate > project.EndDate).FirstOrDefault();
+
+            // Project project = _context.Project.Find(id);
+            if (LateTasks != null && LateTasks.EndDate > project.EndDate)
+            {
+                return Ok(LateTasks);
+            } else {
+                return Ok(false);
+            }
+        }
+
     }
 }
