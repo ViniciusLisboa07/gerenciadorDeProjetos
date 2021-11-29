@@ -23,11 +23,7 @@ namespace Controllers
         public IActionResult Create([FromBody] Subtask subtask)
         {
             int taskId = subtask.TaskId;
-            int projectId = subtask.Task.ProjectId;
-            int userId = subtask.Task.Project.UserId;
             subtask.Task = _context.Task.Find(taskId);
-            subtask.Task.Project = _context.Project.Find(projectId);
-            subtask.Task.Project.User = _context.User.Find(userId);
             _context.Subtask.Add(subtask);
             _context.SaveChanges();
             return Created("", subtask);
@@ -45,26 +41,37 @@ namespace Controllers
 
         //GET: api/produto/getbyid/1
         [HttpGet]
-        [Route("getbyid/{taskId}")]
-        public IActionResult GetById([FromRoute] int taskId)
+        [Route("getbyid/{id}")]
+        public IActionResult GetById([FromRoute] int id)
         {
             //Buscar um produto pela chave primária
-            var subtasks = _context.Subtask.ToList();
-            subtasks.Where(subtask => subtask.TaskId == taskId);
-            if (subtasks == null)
+            Subtask subtask = _context.Subtask
+            .Include(subtask => subtask.Task)
+            .FirstOrDefault(x=> x.Id == id);
+            if (subtask == null)
             {
                 return NotFound();
             }
-            return Ok(subtasks);
+            return Ok(subtask);
         }
 
         //GET: api/subtask/listbyproductid/1
         [HttpGet]
-        [Route("listbytaskid/{id}")]
-        public IActionResult ListByProductId() => 
-                Ok(_context.Subtask
-                .Include(subtask => subtask.Task)
-                .ToList());
+        [Route("listbytaskid/{taskId}")]
+        public IActionResult GetByTaskId([FromRoute] int taskId)
+        {
+            //Buscar um produto pela chave primária
+            List<Subtask> subtask = _context.Subtask
+            .Include(subtask => subtask.Task)
+            .Where(x => x.TaskId == taskId)
+            .ToList();
+
+            if (subtask == null)
+            {
+                return NotFound();
+            }
+            return Ok(subtask);
+        }
 
 
         //DELETE: api/produto/delete/

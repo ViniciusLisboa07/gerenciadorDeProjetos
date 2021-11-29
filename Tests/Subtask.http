@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "Description" : "teste",
-    "TaskId" : 1,
+    "TaskId" : 15,
     "End":false
 }
 
@@ -12,7 +12,10 @@ Content-Type: application/json
 GET http://localhost:5001/api/subtask/list
 
 ### Buscar subtasks pelo id
-GET http://localhost:5001/api/subtask/getbyid/1
+GET http://localhost:5001/api/subtask/getbyid/20
+
+### Buscar subtasks pelo id
+GET http://localhost:5001/api/subtask/listbytaskid/19
 
 ### Alterar subtasks
 PUT http://localhost:5001/api/subtask/update
